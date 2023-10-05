@@ -1,6 +1,7 @@
 package genderdex.arshermetica;
 
 import com.mojang.logging.LogUtils;
+import genderdex.arshermetica.core.core.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ArsHermetica.MOD_ID)
@@ -21,14 +23,19 @@ public class ArsHermetica {
 
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "arshermetica";
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
+
 
     public ArsHermetica() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        modEventBus.addListener(this::commonSetup);
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        AHCreativeTab.TAB_REGISTRY.register(bus);
+        AHEntityTypes.ENTITIES.register(bus);
+        AHItems.ITEMS.register(bus);
+        AHSounds.SOUND.register(bus);
+        KeyBindings.init();
+        bus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
+        GeckoLib.initialize();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
