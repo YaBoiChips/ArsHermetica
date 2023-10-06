@@ -1,0 +1,9 @@
+{
+  "loader": "forge:obj",
+  "model": "arshermetica:models/block/alchemical_engine.obj",
+  "flip_v": true,
+  "textures": {
+    "texture0": "arshermetica:block/alchemical_engine",
+    "particle": "arshermetica:block/alchemical_engine"
+  }
+}

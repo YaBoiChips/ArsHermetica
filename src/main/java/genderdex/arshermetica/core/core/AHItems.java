@@ -1,6 +1,7 @@
 package genderdex.arshermetica.core.core;
 
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,6 +16,8 @@ public class AHItems {
     public static final RegistryObject<Item> SULPHUR = createItem("sulphur");
     public static final RegistryObject<Item> BONE_ASH = createItem("bone_ash");
     public static final RegistryObject<Item> BLACK_CARBON = createItem("black_carbon");
+
+    public static final RegistryObject<Item> ALCHEMICAL_ENGINE = ITEMS.register("alchemical_engine", ()-> new BlockItem(AHBlocks.ALCHEMICAL_ENGINE.get(), new Item.Properties()));
 
 
     public static RegistryObject<Item> createItem(String id){

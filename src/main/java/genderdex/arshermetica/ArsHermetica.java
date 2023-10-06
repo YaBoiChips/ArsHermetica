@@ -30,6 +30,7 @@ public class ArsHermetica {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         AHCreativeTab.TAB_REGISTRY.register(bus);
         AHEntityTypes.ENTITIES.register(bus);
+        AHBlocks.BLOCKS.register(bus);
         AHItems.ITEMS.register(bus);
         AHSounds.SOUND.register(bus);
         KeyBindings.init();
