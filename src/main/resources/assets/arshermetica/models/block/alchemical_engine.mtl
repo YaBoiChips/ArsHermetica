@@ -1,4 +1,12 @@
-# Made in Blockbench 4.8.3
+# Blender 3.6.4 MTL File: 'None'
+# www.blender.org
+
 newmtl m_ef5f6b1f-124c-cb56-6b1b-a7ae4fe44bc1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
 map_Kd arshermetica:block/alchemical_engine
-newmtl none
