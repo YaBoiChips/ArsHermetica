@@ -3,7 +3,11 @@
   "model": "arshermetica:models/block/alchemical_engine.obj",
   "flip_v": true,
   "textures": {
-    "texture0": "arshermetica:block/alchemical_engine",
-    "particle": "arshermetica:block/alchemical_engine"
+    "particle": "arshermetica:block/engine_side",
+    "engine_side": "arshermetica:block/engine_side",
+    "engine_bottom": "arshermetica:block/engine_bottom",
+    "engine_back": "arshermetica:block/engine_back",
+    "engine_front": "arshermetica:block/engine_front",
+    "engine_top": "arshermetica:block/engine_top"
   }
 }

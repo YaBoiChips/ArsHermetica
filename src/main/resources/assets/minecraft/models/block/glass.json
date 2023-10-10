@@ -1,0 +1,13 @@
+{
+    "loader": "forge:obj",
+    "model": "minecraft:models/block/alchemical_engine.obj",
+    "flip_v": true,
+    "textures": {
+        "particle": "minecraft:block/engine_side",
+        "engine_side": "minecraft:block/engine_side",
+        "engine_bottom": "minecraft:block/engine_bottom",
+        "engine_back": "minecraft:block/engine_back",
+        "engine_front": "minecraft:block/engine_front",
+        "engine_top": "minecraft:block/engine_top"
+    }
+}
