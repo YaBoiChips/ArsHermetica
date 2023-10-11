@@ -1,4 +1,4 @@
-package genderdex.arshermetica.core.core;
+package genderdex.arshermetica.core;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.registries.DeferredRegister;

@@ -1,4 +1,4 @@
-package genderdex.arshermetica.core.core;
+package genderdex.arshermetica.core;
 
 
 import net.minecraft.world.item.BlockItem;
@@ -18,6 +18,7 @@ public class AHItems {
     public static final RegistryObject<Item> BLACK_CARBON = createItem("black_carbon");
 
     public static final RegistryObject<Item> ALCHEMICAL_ENGINE = ITEMS.register("alchemical_engine", ()-> new BlockItem(AHBlocks.ALCHEMICAL_ENGINE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CALCINATOR = ITEMS.register("calcinator", ()-> new BlockItem(AHBlocks.CALCINATOR.get(), new Item.Properties()));
 
 
     public static RegistryObject<Item> createItem(String id){

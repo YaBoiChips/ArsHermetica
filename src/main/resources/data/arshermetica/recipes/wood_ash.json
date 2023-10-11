@@ -1,0 +1,9 @@
+{
+  "type": "arshermetica:calcinator",
+  "ingredient": {
+    "item": "minecraft:oak_log"
+  },
+  "result": "arshermetica:wood_ash",
+  "experience": 0.1,
+  "cookingtime": 100
+}

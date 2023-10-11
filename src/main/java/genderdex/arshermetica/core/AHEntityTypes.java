@@ -1,4 +1,4 @@
-package genderdex.arshermetica.core.core;
+package genderdex.arshermetica.core;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraftforge.registries.DeferredRegister;

@@ -1,4 +1,4 @@
-package genderdex.arshermetica.core.core;
+package genderdex.arshermetica.core;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;

@@ -1,7 +1,7 @@
 package genderdex.arshermetica;
 
 import com.mojang.logging.LogUtils;
-import genderdex.arshermetica.core.core.*;
+import genderdex.arshermetica.core.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -15,7 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
-//import software.bernie.geckolib.GeckoLib;
+import software.bernie.geckolib.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ArsHermetica.MOD_ID)
@@ -31,12 +31,16 @@ public class ArsHermetica {
         AHCreativeTab.TAB_REGISTRY.register(bus);
         AHEntityTypes.ENTITIES.register(bus);
         AHBlocks.BLOCKS.register(bus);
+        AHBlockEntities.BLOCK_ENTITIES.register(bus);
         AHItems.ITEMS.register(bus);
         AHSounds.SOUND.register(bus);
+        AHMenus.MENUS.register(bus);
+        AHRecipeSerializers.RECIPE_SERIALIZERS.register(bus);
+        AHRecipeTypes.RECIPES.register(bus);
         KeyBindings.init();
         bus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
-//        GeckoLib.initialize();
+        GeckoLib.initialize();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
