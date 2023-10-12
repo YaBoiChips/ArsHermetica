@@ -1,9 +1,9 @@
 {
   "type": "arshermetica:calcinator",
   "ingredient": {
-    "tag": "minecraft:logs"
+    "item": "minecraft:bone"
   },
-  "result": "arshermetica:wood_ash",
+  "result": "arshermetica:bone_ash",
   "experience": 0.1,
   "cookingtime": 200
 }

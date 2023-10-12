@@ -1,6 +1,7 @@
 package genderdex.arshermetica.core;
 
 import genderdex.arshermetica.common.blocks.calcinator.CalcinatorRecipe;
+import genderdex.arshermetica.common.blocks.essence_refinery.EssenceRefineryRecipe;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,5 +15,6 @@ public class AHRecipeTypes {
 
 
     public static RegistryObject<RecipeType<CalcinatorRecipe>> CALCINATOR = RECIPES.register("calcinator", ()-> new RecipeType<>(){});
+    public static RegistryObject<RecipeType<EssenceRefineryRecipe>> ESSENCE_REFINERY = RECIPES.register("essence_refinery", ()-> new RecipeType<>(){});
 
 }

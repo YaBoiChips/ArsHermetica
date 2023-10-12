@@ -2,6 +2,7 @@ package genderdex.arshermetica.mixin;
 
 
 import genderdex.arshermetica.common.blocks.calcinator.CalcinatorScreen;
+import genderdex.arshermetica.common.blocks.essence_refinery.EssenceRefineryScreen;
 import genderdex.arshermetica.core.AHMenus;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.gui.screens.Screen;
@@ -25,5 +26,6 @@ public abstract class MixinScreenManager {
     @Inject(method = "<clinit>", at = @At("RETURN"))
     private static void registerScreen(CallbackInfo ci) {
         register(AHMenus.CALCINATOR.get(), CalcinatorScreen::new);
+        register(AHMenus.ESSENCE_REFINERY.get(), EssenceRefineryScreen::new);
     }
 }

@@ -1,0 +1,15 @@
+{
+  "type": "arshermetica:essence_refinery",
+  "ingredient": {
+    "item": "minecraft:gunpowder"
+  },
+  "ingredient2": {
+    "item": "minecraft:gunpowder"
+  },
+  "ingredient3": {
+    "item": "minecraft:gunpowder"
+  },
+  "result": "arshermetica:oil_of_vitriol",
+  "experience": 0.1,
+  "cookingtime": 200
+}

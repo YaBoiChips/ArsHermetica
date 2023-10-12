@@ -1,9 +1,9 @@
 {
   "type": "arshermetica:calcinator",
   "ingredient": {
-    "tag": "minecraft:logs"
+    "item": "minecraft:raw_copper"
   },
-  "result": "arshermetica:wood_ash",
+  "result": "arshermetica:raw_tin",
   "experience": 0.1,
   "cookingtime": 200
 }
