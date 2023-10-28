@@ -1,0 +1,34 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"2": "calcinator_front",
+		"3": "calcinator_side",
+		"4": "calcinator_top"
+	},
+	"elements": [
+		{
+			"from": [2, 4, 2],
+			"to": [14, 16, 14],
+			"faces": {
+				"north": {"uv": [2, 0, 14, 12], "texture": "#2"},
+				"east": {"uv": [2, 0, 14, 12], "texture": "#3"},
+				"south": {"uv": [2, 0, 14, 12], "texture": "#3"},
+				"west": {"uv": [2, 0, 14, 12], "texture": "#3"},
+				"up": {"uv": [2, 2, 14, 14], "texture": "#4"},
+				"down": {"uv": [0, 0, 14, 14], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [1, 0, 1],
+			"to": [15, 4, 15],
+			"faces": {
+				"north": {"uv": [1, 12, 15, 16], "texture": "#2"},
+				"east": {"uv": [1, 12, 15, 16], "texture": "#3"},
+				"south": {"uv": [1, 12, 15, 16], "texture": "#3"},
+				"west": {"uv": [1, 12, 15, 16], "texture": "#3"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#4"},
+				"down": {"uv": [0, 0, 14, 14], "texture": "#missing"}
+			}
+		}
+	]
+}
